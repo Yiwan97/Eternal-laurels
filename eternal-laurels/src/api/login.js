@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { checkUserPass, checkUser } from './checkUserPass';
 import createUser from './createUser';
 
-(async () => {
+ async function ingreso () {
   const user = await checkUser(body);
   if(!user) {
     const createdUser = await createUser(body);
@@ -21,6 +21,7 @@ import createUser from './createUser';
       console.error('Usuario y contraseñas no concidentes')
     }
   }
-})();
+};
 
+export default ingreso;
 

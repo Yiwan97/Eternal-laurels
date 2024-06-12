@@ -1,4 +1,5 @@
 import supabase from './supabase';
+const idJ = caches.keys(id);
 
 async function Recursos (idJ) {
   const { data, error } = await supabase

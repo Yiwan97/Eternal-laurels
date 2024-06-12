@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "auth-provider": "^0.6.2"
+    "auth-provider": "^0.6.2",
+    "axios": "^1.7.2",
+    "dompurify": "^3.1.5"
   }
 }
