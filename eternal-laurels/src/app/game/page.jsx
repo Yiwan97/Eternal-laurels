@@ -1,16 +1,27 @@
 'use client';
+import Citymap from "@/componentes/citymap";
+import Worldmap from "@/componentes/worldmap";
+import CabeceraGame from '@/componentes/CabeceraGame';
+import Image from "next/image";
+import redirigirLogin from '../../api/redirigirLogin';
+var visible = false;
 
 function Game () {
-  <div>
-    <CabeceraGame />
+  const auth = cache.get(authenticate);
+  redirigirLogin(auth);
+
+  return (
     <div>
-      <img src='#' name='ciudad' />
-      <map id='' name='ciudad'>
-        <area />
-      </map>
+      <CabeceraGame />
+      ( city ? <Citymap /> : <Worldmap /> );
+      <div>
+        <Intereraciones />
+        <div>
+          <img src='carac' onClick='tropas' className='' />
+        </div>
+      </div>
     </div>
-    <div>
-      
-    </div>
-  </div>
+  );
 }
+
+export default Game;

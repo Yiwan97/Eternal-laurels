@@ -1,40 +1,60 @@
-import { FormEvent } from 'react';
-import { useRouter } from 'next/router';
+import Image from "next/image";
+//import { cookies } from 'next/headers'
 
-function Login () {
+const recurso = {
+  comida: 1000,
+  madera: 1000,
+  metal: 1000,
+  piedra: 1000,
+  caracoles: 1000
+}
 
-  const router = useRouter();
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-
-    const formData = new FormData(event.currentTarget);
-    const email = formData.get('email');
-    const pasword = formData.get('password');
-
-    const response = await fetch('/api/auth/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/JSON' },
-      body: JSON.stringify({ email, password })
-    });
-
-    if (response.ok) {
-      router.push('/game')
-    } else {
-      // Notificar error
-    }
-  }
-
+function CabeceraGame () {
+  //const cookieStore = cookies()
   return (
-    <div>
-      <form>
-        <input type='email' name='email' placeholder='Email' required />
-        <input type='password' name='password' placeholder='Password' required/>
-        <button type='submit'>Ingresar</button>
-      </form>
-      <p>Al ingresar acepta los <a className='Terminos'>Terminos y condiciones</a>.</p>
+    <div id='CabeceraPrincipal'>
+      <div className='recurso' id='comida'>
+          {/*<Image
+            src='/iconComida.png'
+            alt='comida'
+            layout='fill'
+          />*/}
+          <p>1000</p>
+      </div>
+      <div className='recurso' id='madera'>
+          <Image
+            src='/iconMadera.png'
+            alt='madera'
+            layout='fill'
+          />
+          <p>1000</p>
+      </div>
+      <div className='recurso' id='metal'>
+          <Image
+            src='/iconMetal.png'
+            alt='metal'
+            layout='fill'
+          />
+          <p>1000</p>
+      </div>
+  <div className='recurso' id='piedra'>
+          <Image
+            src='/iconPiedra.png'
+            alt='piedra'
+            layout='fill'
+          />
+          <p>{recurso.piedra}</p>
+      </div>
+      <div className='recurso' id='caracoles'>
+          <Image
+            src='/iconCaracoles.png'
+            alt='caracoles'
+            layout='fill'
+          />
+          <p>1000</p>
+      </div>
     </div>
   );
 }
 
-export default Login;
+export default CabeceraGame;

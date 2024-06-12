@@ -1,0 +1,60 @@
+.cabecera {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: sandybrown;
+}
+
+
+.form {
+  position: absolute;
+  top: 30%;
+  left: 10%; 
+  width: 85%;
+  height: 45%;
+}
+
+.dat {
+  border-radius: 25rem;
+  border-color: black;
+  border-style: solid;
+  mask-border-width: 2px;
+  height: 100%;
+  background-color: burlywood;
+  color: black;
+  text-align: center;
+}
+
+.email {
+  position: absolute;
+  left: 10%;
+  width: 25%
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.pass {
+  position: absolute;
+  left: 36%
+}
+
+.term {
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  size: 10rem;
+}
+
+.enviar {
+  position: absolute;
+  left: 56%;
+  background-color: green;
+  border-radius: 25rem;
+  width: 26%;
+  height: 100%;
+}
+
