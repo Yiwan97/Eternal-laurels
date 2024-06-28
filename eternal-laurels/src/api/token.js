@@ -1,19 +1,24 @@
 const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
 
 //Definir carga util
-
-const payload = {
+/*const datosjugador = {
   userId: user.id,
   email: user.email,
-  password: user.password
-};
+};*/
+ 
+function crearToken(datosjugador) {
+  //tiempo de duracion del token 4 horas
+  const expiresIn = 60 * 60 * 4;
+  //generar clave secreta de 32-byte hex para firmar el token
+  const secretKey = crypto.randomBytes(32).toString('hex');
+  // crear el JWT
+  const token = jwt.sign(datosjugador, secretKey, {expiresIn});
+  return token;
+}
+export default crearToken;
 
-//clave secreta para firmar el token
-
-const secretKey = 'aleatoridad';
-
-//tiempo de duracion del token
-const expiresIn = 60 * 60 * 24; //24 horas
-
-// crear el JWT
-const token = jwt.sign(payload, secretKey, {expiresIn});
+//accesible solo para la ventana actual
+sessionStorage.setItem(user, true);
+//persistente eliminar luego de x horas
+localStorage.setItem(user, true);

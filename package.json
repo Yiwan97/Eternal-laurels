@@ -2,6 +2,8 @@
   "dependencies": {
     "auth-provider": "^0.6.2",
     "axios": "^1.7.2",
-    "dompurify": "^3.1.5"
+    "dompurify": "^3.1.5",
+    "png-js": "^1.0.0",
+    "quill": "^2.0.2"
   }
 }

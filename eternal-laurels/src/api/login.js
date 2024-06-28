@@ -8,7 +8,10 @@ import createUser from './createUser';
     const createdUser = await createUser(body);
     if(createdUser) {
       console.log('Usuario creado exitosamente');
-      return NextResponse.redirect(new URL('/game', request.url));
+      const redirect = NextResponse.redirect(new URL('/game', request.url));
+      const user = true;
+      CacheStorage.add(user);
+      return (redirect, user);
     } else {
       console.error('Hubo un error al crear al usuario');
     }
@@ -16,7 +19,10 @@ import createUser from './createUser';
     const isAutheticated = await checkUserPass(body);
     if (isAutheticated) {
       console.log('Usuario verificado');
-      return NextResponse.redirect(new URL('/game', request.url));
+      const redirect = NextResponse.redirect(new URL('/game', request.url));
+      const user = true;
+      CacheStorage.add(user);
+      return (redirect, user);
     } else {
       console.error('Usuario y contraseñas no concidentes')
     }

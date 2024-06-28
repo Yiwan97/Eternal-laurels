@@ -9,13 +9,13 @@ async function checkUser (body) {
     console.error('eer');
     return null;
   }
-  return data;
+  return true;
 }
 
 async function checkUserPass (body) {
   const { data, error } = await supabase
     .from('tabla')
-    .select()
+    .select('id')
     .eq('email', body.email)
     .eq('password', body.password);
   if (error) {
@@ -23,7 +23,7 @@ async function checkUserPass (body) {
     return null;
   }
   const length = data.length > 0;
-  return length;
+  return (length, data);
 }
 export { checkUser, checkUserPass };
 
