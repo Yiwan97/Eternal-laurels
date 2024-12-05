@@ -2,7 +2,7 @@
 import  React, { useState } from 'react';
 import { supabase } from '../../api/supabase';
 import './loginGame.css';
-import { encryptMessage } from '@/api/encriptacion';
+//import { encryptMessage } from '@/api/encriptacion';
 import Ingreso from '@/api/login'
 
 function Login() {
@@ -11,9 +11,9 @@ function Login() {
   const handleCleanInput = (value) => {
     return Limpieza(value);
   }
-  const encriptacion = (value) => {
-    return encryptMessage(value);
-  }
+  //const encriptacion = (value) => {
+  //  return encryptMessage(value);
+  //}
   const body = {
     emailEn: email,
     passEn: pass
