@@ -1,5 +1,5 @@
 'use client'
-import userLogeado from '@/api/auth'
+import userLogeado from '@/api/varios/auth'
 const login = CacheStorage.has(user);
 
 function UserForo (login) {

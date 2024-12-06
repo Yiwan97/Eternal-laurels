@@ -1,9 +1,9 @@
 'use client';
 import  React, { useState } from 'react';
-import { supabase } from '../../api/supabase';
+import { supabase } from '../../api/supabase/supabase';
 import './loginGame.css';
 //import { encryptMessage } from '@/api/encriptacion';
-import Ingreso from '@/api/login'
+import Ingreso from '@/api/supabase/login'
 
 function Login() {
   const [email, setEmail] = useState('');

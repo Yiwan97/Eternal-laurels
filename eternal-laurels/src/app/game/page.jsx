@@ -2,7 +2,7 @@
 import Citymap from '@/componentes/citymap';
 import Worldmap from '@/componentes/worldmap';
 import CabeceraGame from '@/componentes/CabeceraGame';
-import redirigirLogin from '../../api/redirigirLogin';
+import redirigirLogin from '../../api/varios/redirigirLogin';
 
 
 function Game () {
