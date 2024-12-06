@@ -40,23 +40,27 @@ function Login() {
   };
 
   return (
-    <div className='cabecera'>
-      <form onSubmit={handleSubmit} class='form'>
+    <div className=''>
+      <form 
+      onSubmit={handleSubmit} 
+      class='absolute left-0 top-10 h-4/6 w-full'>
         <input 
           type='email' 
           name='email' 
           placeholder='exampleEmail@site.com'
           onChange={e => setEmail(e.target.value)}
-          class='dat email'
+          class='relative left-8 rounded-md border border-black text-center'
         />
         <input
           type='password'
           name='password'
           placeholder='Your password'
           onChange={p => setPass(p.target.value)}
-          class='dat pass'
+          class='relative left-20 rounded-md border border-black text-center'
         />
-        <button class='enviar'>Login</button>
+        <button class='relative left-32 rounded-md border border-black text-center h-6 w-36 bg-green-600'>Ingresar</button>
+        <button class='relative left-44 rounded-md border border-black text-center h-6 w-36 bg-green-600'>Registrarse</button>
+        <p class="relative top-3 text-center">Al hacer click en 'Login' aceptas los <a href="https://www.youtube.com/watch?v=kLzICexlPzU">Terminos & Condiciones</a>.</p>
       </form>
     </div>
   )

@@ -1,63 +1,37 @@
 'use client';
 
 import Image from "next/image";
-import Inicio from './Inicio.css';
 import Link from 'next/link';
 import Login from '../componentes/loginGame/loginGame';
 import Idiomas from '@/componentes/loginGame/idiomas';
-import Centro from '@/componentes/Centro';
+import Centro from '@/componentes/centro';
+import Lateral from '@/componentes/home/lateral';
 
 var num = 0;
 
 export default function Home() {
   return (
     /*inicio true => game */
-    <main>
-      <Idiomas />
-      <Login />
-      <div className='titulo'>
+    <main class='absolute h-[100vh] w-full'>
+      <div class='relative left-0 top-0 h-[20%] w-full'>
+        <Idiomas />
+        <Login />
+      </div>
+      <div 
+      className='top-auto h-[11%] w-full'>
         <Image
           src='/titu.png'
           alt='Eternal Laurels'
           layout='fill'
         />
       </div>
-      <div className='imagenes'>
-        <div className='lateral' id='izq'>
-          <Image
-            src='/tempo.png'
-            alt='Lateral'
-            layout='fill'
-          />
-        </div>
-        <div className='centro'>
-          <div><Centro /></div>
-          <div className='flechas'>
-            <div className='direc' id='flechaizq'>
-              <Image 
-                src='/izquierda.png'
-                alt='izquierda'
-                layout='fill'
-                onClick={num = num - 1}/>
-            </div>
-            <div className='direc' id='flechader'>
-              <Image
-                src='/derecha.png'
-                alt='derecha'
-                layout='fill'
-                onClick={num = num + 1}
-              />
-            </div>
-          </div>
-        </div>
-        <div className='lateral' id='der'>
-          <Image
-            src='/tempo.png'
-            alt='Lateral'
-            layout='fill'
-          />
-        </div>
+
+      <div class='relative left-0 top-auto inline-flex h-[65%] w-full'>
+        <Lateral></Lateral>
+        <Centro></Centro>
+        <Lateral></Lateral>
       </div>
+
       <div className='pie'>
         <nav className='navlogin'>
           <Link href='https://youtu.be/AJMiYFyM4Lg?list=RDov0rdSaEAbE'>Beautiful circle</Link>
@@ -66,6 +40,7 @@ export default function Home() {
           <Link href='https://youtu.be/oA0CpI0vCK4?list=RDEeF3a4ZtQVs'>Mumei</Link>
         </nav>
       </div>
+
     </main>
   );
 }

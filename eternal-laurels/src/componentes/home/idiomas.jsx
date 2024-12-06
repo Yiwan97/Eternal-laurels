@@ -7,7 +7,10 @@ function Idiomas () {
   }
 
   return (
-    <div class='idiomas' name='idiomas' id='idiomas'>
+    <div 
+    class='left-0 top-0 h-[20%] w-[18%] rounded border text-center' 
+    name='idiomas' 
+    id='idiomas'>
       <select class='selector'>
         <option value='arabe'> عربي </option>
         <option value='chino'> 简体中文）</option>
