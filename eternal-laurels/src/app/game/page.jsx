@@ -1,10 +1,9 @@
 'use client';
-import Citymap from "@/componentes/citymap";
-import Worldmap from "@/componentes/worldmap";
+import Citymap from '@/componentes/citymap';
+import Worldmap from '@/componentes/worldmap';
 import CabeceraGame from '@/componentes/CabeceraGame';
-import Image from "next/image";
 import redirigirLogin from '../../api/redirigirLogin';
-var visible = false;
+
 
 function Game () {
   const auth = cache.get(authenticate);
@@ -13,12 +12,9 @@ function Game () {
   return (
     <div>
       <CabeceraGame />
-      ( city ? <Citymap /> : <Worldmap /> );
       <div>
+        ( city ? <Citymap /> : <Worldmap /> );
         <Intereraciones />
-        <div>
-          <img src='carac' onClick='tropas' className='' />
-        </div>
       </div>
     </div>
   );

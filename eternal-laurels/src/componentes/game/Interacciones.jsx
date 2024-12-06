@@ -1,54 +1,41 @@
 import Image from 'next/image';
-import '/interaciones.css';
 
-function Intereraciones(visible) {
-  if(visible) {
-    return (
-      <div className='componente'>
-        <div className='barra' id='primera'>
-          <div className='vista'>
-            <Image 
-              src='ocultar.png'
-              alt='ocultar'
-              layout='fill'
-              onClick={visible=false}
-              />
-          </div>
+function Interaciones() {
+  return (
+    <div class='relative left-[5%] top-[85vh] z-10 inline-flex h-[6vh] w-[90%]'>
+      <div class='top-0 h-full w-[12.5%]'>
+        <Image 
+          src='ciencia.png'
+          alt='ciencia'
+          layout='fill'
+          onclick={() => <Ciencia />}
+        />
+      </div>
+      <div class='top-0 h-full w-[12.5%]'>
+        <Image 
+          src='militar.png'
+          alt='militar'
+          layout='fill'
+          onclick={<Militar />}
+        />
         </div>
-        <div className='barra' id='segunda'>
-          <div className='inte' id='ciencia'>
-            <Image 
-              src='ciencia.png'
-              alt='ciencia'
-              layout='fill'
-              onclick={() => <Ciencia />}
-            />
+        <div class='top-0 h-full w-[12.5%]'>
+          <Image
+            src='naval.png'
+            alt='naval'
+            layout='fill'
+            onclick={<Naval />} 
+          />
+        </div>
+        <div class='top-0 h-full w-[12.5%]'>
+          <Image
+            src='labor.png'
+            alt='trabajadores'
+            layout='fill'
+            onclick={<Trabajadores />}
+          />
           </div>
-          <div className='inte' id='militar'>
-            <Image 
-              src='militar.png'
-              alt='militar'
-              layout='fill'
-              onclick={<Militar />}
-            />
-          </div>
-          <div className='inte' id='naval'>
-            <Image
-              src='naval.png'
-              alt='naval'
-              layout='fill'
-              onclick={<Naval />} 
-            />
-          </div>
-          <div className='inte' id='labor'>
-            <Image
-              src='labor.png'
-              alt='trabajadores'
-              layout='fill'
-              onclick={<Trabajadores />}
-            />
-          </div>
-          <div className='inte' id='comercio'>
+          <div class='top-0 h-full w-[12.5%]'>
             <Image
               src='comercio.png'
               alt='comercio'
@@ -56,7 +43,7 @@ function Intereraciones(visible) {
               onclick={<Comercio />}
             />
           </div>
-          <div className='inte' id='diplomacia'>
+          <div class='top-0 h-full w-[12.5%]'>
             <Image
               src='diplomacia.png'
               alt='diplomacia'
@@ -64,7 +51,7 @@ function Intereraciones(visible) {
               onclick={<Diplomacia />}
             />
           </div>
-          <div className='inte' id='premium'>
+          <div class='top-0 h-full w-[12.5%]'>
             <Image
               src='premium.png'
               alt='premium'
@@ -72,22 +59,17 @@ function Intereraciones(visible) {
               onclick={<Premium />}
             />
           </div>
-        </div>
-      </div>
-    );
-  } else {
-    return (
-      <div className='barra'>
-        <div className='vista'>
-          <Image 
-            src='mostrar.png'
-            alt='mostrar'
-            layout='fill'
-            onClick={visible=true}/>
-        </div>
-      </div>
-    );
-  }
+          <div class='top-0 h-full w-[12.5%]'>
+            <Image
+              src='ajustes.png'
+              alt='ajustes'
+              layout='fill'
+              onclick={<Ajustes />}
+            />
+          </div>
+    </div>
+  );
 }
 
-export default Intereraciones;
+
+export default Interaciones;

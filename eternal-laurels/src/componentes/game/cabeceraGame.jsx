@@ -12,8 +12,8 @@ const recurso = {
 function CabeceraGame () {
   //const cookieStore = cookies()
   return (
-    <div id='CabeceraPrincipal'>
-      <div className='recurso' id='comida'>
+    <div class='inline-flex h-[6%] w-full top-0'>
+      <div className='left-auto top-0 h-full w-[14%]'>
           {/*<Image
             src='/iconComida.png'
             alt='comida'
@@ -21,7 +21,7 @@ function CabeceraGame () {
           />*/}
           <p>1000</p>
       </div>
-      <div className='recurso' id='madera'>
+      <div className='left-auto top-0 h-full w-[14%]'>
           <Image
             src='/iconMadera.png'
             alt='madera'
@@ -29,7 +29,7 @@ function CabeceraGame () {
           />
           <p>1000</p>
       </div>
-      <div className='recurso' id='metal'>
+      <div className='left-auto top-0 h-full w-[14%]'>
           <Image
             src='/iconMetal.png'
             alt='metal'
@@ -37,7 +37,7 @@ function CabeceraGame () {
           />
           <p>1000</p>
       </div>
-  <div className='recurso' id='piedra'>
+  <div className='left-auto top-0 h-full w-[16%]'>
           <Image
             src='/iconPiedra.png'
             alt='piedra'
@@ -45,7 +45,23 @@ function CabeceraGame () {
           />
           <p>{recurso.piedra}</p>
       </div>
-      <div className='recurso' id='caracoles'>
+      <div className='left-auto top-0 h-full w-[14%]'>
+          <Image
+            src='/iconCaracoles.png'
+            alt='caracoles'
+            layout='fill'
+          />
+          <p>1000</p>
+      </div>
+      <div className='left-auto top-0 h-full w-[14%]'>
+          <Image
+            src='/iconCaracoles.png'
+            alt='caracoles'
+            layout='fill'
+          />
+          <p>1000</p>
+      </div>
+      <div className='left-auto top-0 h-full w-[14%]'>
           <Image
             src='/iconCaracoles.png'
             alt='caracoles'
