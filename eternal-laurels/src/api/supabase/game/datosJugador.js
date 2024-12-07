@@ -1,4 +1,4 @@
-import supabase from './supabase';
+import supabase from '../supabase';
 const idJ = caches.keys(id);
 
 async function Recursos (idJ) {

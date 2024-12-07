@@ -1,6 +1,6 @@
 const { Storage } = require('@supabase/storage');
 const PNG = require('png-js');
-import supabase from './supabase';
+import supabase from '../supabase';
 
 const storage = new Storage(supabase);
 
