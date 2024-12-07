@@ -1,5 +1,3 @@
-import './idiomas.css';
-
 function Idiomas () {
   let selec = localStorage.getItem('len');
   function guardar(idio) {
@@ -8,10 +6,10 @@ function Idiomas () {
 
   return (
     <div 
-    class='left-0 top-0 h-[20%] w-[18%] rounded border text-center' 
+    class='left-0 top-0 h-[20%] w-[8%] rounded border text-center bg-[#00ff00]' 
     name='idiomas' 
     id='idiomas'>
-      <select class='selector'>
+      <select class='bg-[#00ff00] rounded'>
         <option value='arabe'> عربي </option>
         <option value='chino'> 简体中文）</option>
         <option value='castellano'> Español </option>

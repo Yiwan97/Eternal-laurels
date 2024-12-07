@@ -1,20 +1,17 @@
 'use client';
-import Citymap from '@/componentes/citymap';
-import Worldmap from '@/componentes/worldmap';
-import CabeceraGame from '@/componentes/CabeceraGame';
+import Citymap from '@/componentes/game/citymap';
+import Worldmap from '@/componentes/game/worldmap';
+import CabeceraGame from '@/componentes/game/cabeceraGame';
+import Interaciones from '@/componentes/game/Interacciones';
 import redirigirLogin from '../../api/varios/redirigirLogin';
 
-
 function Game () {
-  const auth = cache.get(authenticate);
-  redirigirLogin(auth);
-
   return (
     <div>
       <CabeceraGame />
       <div>
         ( city ? <Citymap /> : <Worldmap /> );
-        <Intereraciones />
+        <Interaciones />
       </div>
     </div>
   );

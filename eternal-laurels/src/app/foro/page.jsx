@@ -1,7 +1,7 @@
-import Barra from '@/componentes/Barra';
-import Contenido from '@/componentes/Contenido';
-import Lateral from '@/componentes/Lateral';
-import Pie from '@/componentes/Pie';
+import Barra from '@/componentes/foro/barra';
+import Contenido from '@/componentes/foro/contenido';
+import Lateral from '@/componentes/foro/lateral';
+import Footer from '@/componentes/home/footer';
 
 function Foro () {
   return (
@@ -9,7 +9,7 @@ function Foro () {
       <Barra />
       <Contenido />
       <Lateral />
-      <Pie />
+      <Footer />
     </div>
   );
 }

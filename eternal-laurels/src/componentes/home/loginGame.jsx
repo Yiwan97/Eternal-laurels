@@ -1,9 +1,6 @@
 'use client';
 import  React, { useState } from 'react';
-import { supabase } from '../../api/supabase/supabase';
-import './loginGame.css';
 //import { encryptMessage } from '@/api/encriptacion';
-import Ingreso from '@/api/supabase/login'
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -43,11 +40,11 @@ function Login() {
     <div className=''>
       <form 
       onSubmit={handleSubmit} 
-      class='absolute left-0 top-10 h-4/6 w-full'>
+      class='absolute left-[20%] top-10 h-4/6 w-full'>
         <input 
           type='email' 
           name='email' 
-          placeholder='exampleEmail@site.com'
+          placeholder='Your Email'
           onChange={e => setEmail(e.target.value)}
           class='relative left-8 rounded-md border border-black text-center'
         />
@@ -60,10 +57,10 @@ function Login() {
         />
         <button class='relative left-32 rounded-md border border-black text-center h-6 w-36 bg-green-600'>Ingresar</button>
         <button class='relative left-44 rounded-md border border-black text-center h-6 w-36 bg-green-600'>Registrarse</button>
-        <p class="relative top-3 text-center">Al hacer click en 'Login' aceptas los <a href="https://www.youtube.com/watch?v=kLzICexlPzU">Terminos & Condiciones</a>.</p>
+        <p class="relative -left-[20%] top-3 text-center">Al hacer click en 'Login' aceptas los <a href="https://www.youtube.com/watch?v=kLzICexlPzU">Terminos & Condiciones</a>.</p>
       </form>
     </div>
-  )
+  );
 }
 
 
