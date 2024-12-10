@@ -17,6 +17,19 @@ function setup() {
 
   //Funcion para crear un hexagono en una posicion dada
   function createHexagon(x, y) {
-    const hexagon = new Pixi.Sprite
+    const hexagon = new Pixi.Sprite(hexagonTexture);
+    hexagon.x = x;
+    hexagon.y = y;
+    app.stage.addChild(hexagon);
+  }
+
+  //Ejemplo de creaciion de una fila de hexagonos
+  const spacing = 79;
+  for (let i = 0; i < 10; i++) {
+    createHexagon(i * spacing, 0);
   }
 }
+
+export default setup;
+
+//Buscar sobre pool de sprites, PIXI.Container
