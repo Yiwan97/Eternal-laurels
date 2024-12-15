@@ -1,7 +1,8 @@
-function Contenido () {
+function Contenido(actual) {
   return(
-    <div></div>
+    <div class='top-auto w-[70%] bg-[#00ffff]'> 
+    </div>
   );
 }
 
-export default Contenido;
+export default Contenido();
