@@ -1,0 +1,1 @@
+const terrenos = ['Ppp', 'Ppf', 'Ppc', 'Pp', 'Pp', 'Pp',]

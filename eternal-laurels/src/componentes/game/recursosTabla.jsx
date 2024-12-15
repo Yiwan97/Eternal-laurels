@@ -1,4 +1,4 @@
-function recurso () {
+function recursosTabla () {
   return (
     <div id='0' style='line-height:13px;' update='true'>
       <table style='width:100%'>
@@ -30,5 +30,5 @@ function recurso () {
         </tbody>
       </table>
     </div>
-  )
+  );
 }
