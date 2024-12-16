@@ -1,7 +1,6 @@
 import Recurso from './recurso'
 
 function CabeceraGame () {
-  cache.get()
   return (
     <div class='inline-flex h-[6%] w-full top-0'>
       <Recurso 
@@ -10,27 +9,27 @@ function CabeceraGame () {
         valor='1000'
       />
       <Recurso
-        imagen='./icon/IconMadera'
+        imagen='./icon/IconMadera.png'
         alt='madera'
         valor='1000'/>
       <Recurso 
-        imagen='./icon/IconPiedra'
+        imagen='./icon/IconPiedra.png'
         alt='piedra'
         valor='1000'/>
       <Recurso
-        imagen='./icon/IconPerla'
+        imagen='./icon/IconPerla.png'
         alt='perlas'
         valor='1000'/>
       <Recurso 
-        imagen='./icon/IconOro'
+        imagen='./icon/IconOro.png'
         alt='oro'
         valor='1000'/>
       <Recurso 
-        imagen='./icon/Papiros'
+        imagen='./icon/IconPapiro.png'
         alt='papiro'
         valor='1000'/>
       <Recurso 
-        imagen='./icon/Metal'
+        imagen='./icon/IconHierro.png'
         alt='metal'
         valor='1000'/>
     </div>
