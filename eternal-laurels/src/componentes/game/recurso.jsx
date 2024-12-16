@@ -6,7 +6,7 @@ function Recurso (props) {
       <div class='absolute w-[24px] h-[24px] top-[16%] left-[4%]'>
         <Image
           src='./${props.imagen}'
-          alt='${}'
+          alt='${props.alt}'
           fill='fill'
         /></div>
       <p>{props.valor}</p>

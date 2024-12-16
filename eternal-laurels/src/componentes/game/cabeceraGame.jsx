@@ -1,40 +1,38 @@
 import Recurso from './recurso'
 
-//import { cookies } from 'next/headers'
-
 function CabeceraGame () {
-  //const cookieStore = cookies()
+  cache.get()
   return (
     <div class='inline-flex h-[6%] w-full top-0'>
       <Recurso 
-        imagen=''
-        alt=''
-        valor=''
+        imagen='./icon/IconComida.png'
+        alt='comida'
+        valor='1000'
       />
       <Recurso
-        imagen=''
-        alt=''
-        valor=''/>
+        imagen='./icon/IconMadera'
+        alt='madera'
+        valor='1000'/>
       <Recurso 
-        imagen=''
-        alt=''
-        valor=''/>
+        imagen='./icon/IconPiedra'
+        alt='piedra'
+        valor='1000'/>
       <Recurso
-        imagen=''
-        alt=''
-        valor=''/>
+        imagen='./icon/IconPerla'
+        alt='perlas'
+        valor='1000'/>
       <Recurso 
-        imagen=''
-        alt=''
-        valor=''/>
+        imagen='./icon/IconOro'
+        alt='oro'
+        valor='1000'/>
       <Recurso 
-        imagen=''
-        alt=''
-        valor=''/>
+        imagen='./icon/Papiros'
+        alt='papiro'
+        valor='1000'/>
       <Recurso 
-        imagen=''
-        alt=''
-        valor=''/>
+        imagen='./icon/Metal'
+        alt='metal'
+        valor='1000'/>
     </div>
   );
 }
