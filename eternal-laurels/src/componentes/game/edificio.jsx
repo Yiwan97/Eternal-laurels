@@ -1,14 +1,6 @@
 'use client'
 //Creacion del componenten dialog
-function Edificio ({ isOpen, onClose, children }) {
-  return (
-    <dialog open={isOpen} onClose={onClose}>
-      {children}
-    </dialog>
-  );
-}
 
-export default Edificio;
 //Creacion de componentes intercambiables
 const ContenidoA = () => {
   return <p>Contenido del dialogo A</p>

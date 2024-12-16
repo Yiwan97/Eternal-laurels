@@ -1,27 +1,33 @@
-function General(edificio) {
+import Image from 'next/image';
+const General = (props) => {
   return (
-    <div class='absolute h-[25%] inline-flex w-[100%] top-[4%] border'>
-      <div class='absolute h-[100%] w-[60%]'>
-        <h2 class='absolute left-[8%]'>Edificio</h2>
-        <p class='absolute top-[20%] left-[4%]'>Este texto se explica el funcionamiento del "edificio" y por que Kasumi es...</p>
-      </div>
-      <div class='absolute w-[37%] h-[80%] bg-[#0000ff] left-[63%]'></div>
-      <div class='absolute inline-flex w-[37%] h-[20%] left-[63%] bg-[#ffff00] top-[80%]'>
-        <div class='absolute h-[90%] left-[5%] top-[5%] w-[40%] bg-[#00ffff]'>
-          <img
-            class='w-[30%]'
-          />
-          <p class='text-center'>1200</p>
-        </div>
-        <div class='absolute h-[90%] left-[55%] top-[5%] w-[40%] bg-[#00ffff]'>
-          <img
-            class='absolute w-[20%]'
-          />
-          <p class='text-center'>6565</p>  
-        </div>
-      </div>
-    </div>
+    <div></div>
   );
 }
 
 export default General;
+
+<div name="general" class="h-[100vh] w-full bg-orange-600">
+  <div name="edificio" class="relative left-[30%] top-[6%] h-[90%] w-[50%] overflow-auto bg-[#00ff00]">
+    <div name="cerrar" class="absolute left-[94%] w-[6%] top-0 h-[5%] bg-[#e2ec4c] text-center hover:bg-[#ff0000]">
+      <buttom class="left-0 w-[4%]">X</buttom>
+    </div>
+    <div class='relative border w-full h-[30%] top-[6%] inline-flex'>
+      <div class='absolute bg-[#aaaa00] w-[25%] h-[50%] top-[10%] left-[3%]'>
+      </div>
+      <h2 class='absolute left-[32%] top-[3%]'>Edificio</h2>
+      <p class='absolute left-[32%] top-[22%]'>hay que disparate se mato un tomate, quieren que les cuente se arrojo a la fuente</p>
+      <div class='absolute inline-flex w-full text-center h-[16%] left-0 top-[84%]'>
+        <div class='w-[26%] bg-[#ff0000] inline-flex'>
+          <div class='bg-[#0000ff] w-[24px] h-[24px] bottom-0'>
+          </div>
+          <p>123456</p>
+        </div>
+        <div class='w-[26%] bg-slate-600'></div>
+        <div class='w-[26%] bg-orange-700'></div>
+        <button class='w-[22%] bg-lime-600'>Mejorar</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
