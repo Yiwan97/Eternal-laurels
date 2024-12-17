@@ -19,8 +19,8 @@ function Interaciones() {
       />
       <Funcion
         imagen=''
-        alt=''
-        click='trabajadores'/>
+        alt='trabajadores'
+        click=''/>
       <Funcion
         imagen=''
         alt='construcion'
