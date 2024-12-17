@@ -2,43 +2,43 @@ import Funcion from './funcion';
 
 function Interaciones() {
   return (
-    <div class='relative left-[5%] top-[85vh] z-10 inline-flex h-[6vh] w-[90%]'>
+    <div class='relative left-[5%] top-[85vh] z-10 inline-flex h-[7%] w-[90%]'>
       <Funcion
-        imagen=''
+        imagen='./icon/IconConocimientos.png'
         alt='ciencia'
         click=''
       />
       <Funcion
-        imagen=''
+        imagen='./icon/IconEspadas.png'
         alt='militar'
-        click=''/>
+        click='2'/>
       <Funcion
-        imagen=''
+        imagen='./icon/IconNaval.png'
         alt='naval'
         click=''
       />
       <Funcion
-        imagen=''
+        imagen='./icon/IconTrabajadores.png'
         alt='trabajadores'
-        click=''/>
+        click='4'/>
       <Funcion
-        imagen=''
+        imagen='./icon/IconConstrucion.png'
         alt='construcion'
-        click=''
+        click='5'
       />
       <Funcion
-        imagen=''
+        imagen='./icon/IconComercio.png'
         alt='comercio'
-        click=''/>
+        click='6'/>
       <Funcion
-        imagen=''
+        imagen='./icon/IconDiplomacia.png'
         alt='diplomacia'
-        click=''
+        click='7'
       />
       <Funcion
-        imagen=''
+        imagen='./icon/IconEngranaje.png'
         alt='ajustes'
-        click=''/>
+        click='8'/>
     </div>
   );
 }
