@@ -2,9 +2,9 @@ import Image from "next/image";
 
 function Citymap(){
   return (
-    <div>
+    <div class='absolute w-[180%] h-[160%] -left-[30%] -top-[calc(80/3%)] overf'>
       <Image
-        src='/ciudad-prototipo.png'
+        src='/./general/ciudad.png'
         alt='fondo'
         layout='fill'
         name='ciudad'
