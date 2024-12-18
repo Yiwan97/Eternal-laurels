@@ -1,3 +1,7 @@
 import supabase from "../supabase"
 
-const { data: posts } = await supabase.from('posts').select()
+async function postLista() {
+  const { data: posts } = await supabase.from('posts').select()
+  return posts;
+}
+ export default postLista

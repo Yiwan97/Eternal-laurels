@@ -9,3 +9,5 @@ function Post(props) {
 }
 
 export default Post;
+
+return <pre>{JSON.stringify(data, null, 2)}</pre>
