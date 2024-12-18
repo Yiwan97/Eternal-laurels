@@ -1,15 +1,11 @@
-import Barra from '@/componentes/foro/barra';
-import Contenido from '@/componentes/foro/contenido';
-import Lateral from '@/componentes/foro/lateral';
-import Footer from '@/componentes/home/footer';
+import ForoLayout from "./layout";
 
 function Foro () {
   return (
-    <div>
-      <Barra />
-      <Contenido />
-      <Lateral />
-      <Footer />
+    <div class='w-full h-full absolute top-0 left-0'>
+      <ForoLayout>
+        {children}
+      </ForoLayout>
     </div>
   );
 }
