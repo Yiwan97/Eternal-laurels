@@ -2,7 +2,7 @@ import Recurso from './recurso'
 
 function CabeceraGame () {
   return (
-    <div class='sticky absolute inline-flex h-[6%] w-full top-0 bg-[#aa80a9]'>
+    <div class='sticky absolute inline-flex h-[6%] w-full top-0 bg-[#6f3125]'>
       <Recurso 
         imagen='./icon/IconComida.png'
         alt='comida'

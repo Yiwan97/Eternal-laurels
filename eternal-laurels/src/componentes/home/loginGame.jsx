@@ -46,18 +46,18 @@ function Login() {
           name='email' 
           placeholder='Your Email'
           onChange={e => setEmail(e.target.value)}
-          class='relative left-8 rounded-md border border-black text-center'
+          class='h-[45%] relative left-8 rounded-md border border-black text-center'
         />
         <input
           type='password'
           name='password'
           placeholder='Your password'
           onChange={p => setPass(p.target.value)}
-          class='relative left-20 rounded-md border border-black text-center'
+          class='relative h-[45%] left-20 rounded-md border border-black text-center'
         />
-        <button class='relative left-32 rounded-md border border-black text-center h-6 w-36 bg-green-600'>Ingresar</button>
-        <button class='relative left-44 rounded-md border border-black text-center h-6 w-36 bg-green-600'>Registrarse</button>
-        <p class="relative -left-[20%] top-3 text-center">Al hacer click en 'Login' aceptas los <a href="https://www.youtube.com/watch?v=kLzICexlPzU">Terminos & Condiciones</a>.</p>
+        <button class='relative h-[45%] left-32 rounded-md border border-black text-center h-6 w-36 bg-green-600'>Ingresar</button>
+        <button class='relative h-[45%] left-44 rounded-md border border-black text-center h-6 w-36 bg-green-600'>Registrarse</button>
+        <p class="relative -left-[20%] top-[10%] text-center">Al hacer click en 'Login' aceptas los <a href="https://www.youtube.com/watch?v=kLzICexlPzU">Terminos & Condiciones</a>.</p>
       </form>
     </div>
   );

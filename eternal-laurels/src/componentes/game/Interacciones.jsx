@@ -2,7 +2,7 @@ import Funcion from './funcion';
 
 function Interaciones() {
   return (
-    <div class='relative left-[5%] top-[85vh] z-10 inline-flex h-[7%] w-[90%]'>
+    <div class='relative sticky left-[55%] top-[85%] z-10 inline-flex h-[7%] w-[80%]'>
       <Funcion
         imagen='./icon/IconConocimientos.png'
         alt='ciencia'

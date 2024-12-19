@@ -12,7 +12,7 @@ function CiudadMundo () {
   var ciudad = true;
   if (ciudad) {
     return (
-      <div class='sticky absolute w-[12.5vh] h-[12.5vh] left-[6%] top-[74%] z-30'>
+      <div class='sticky absolute w-[12.5vh] h-[12.5vh] left-[6%] top-[74%] z-30 rounded'>
         <button onClick={vista} class='relative w-full h-full'>
           <Image
             src='/icon/IconMundo.png'

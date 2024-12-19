@@ -8,10 +8,10 @@ import redirigirLogin from '../../api/varios/redirigirLogin';
 
 function Game () {
   return (
-    <div>
+    <div class='w-full h-full absolute top-0 left-0'>
       <CabeceraGame />
-      <div>
-        ( city ? <Citymap /> : <Worldmap /> );
+      <div class='w-full h-[94%] top-auto left-0'>
+        <Citymap />  <Worldmap />
         <Interaciones />
         <CiudadMundo />
       </div>
