@@ -1,6 +1,7 @@
+import postLista from "@/api/supabase/foro/postLista";
+import Link from "next/link";
 
-
-async function Foro () {
+async function Foro(post) {
   await postLista()
   if (postLista) {
     return (
@@ -13,7 +14,7 @@ async function Foro () {
   } else {
     return (
       <div>
-
+        <p>Aun no hay publicaciones que mostrar</p>
       </div>
     )
   }
