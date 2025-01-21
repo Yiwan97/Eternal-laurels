@@ -5,3 +5,6 @@ const terrenos =
  'pfF', 'pcC', 'fpP', 'fpF', 'ffP', 'cpC', 'cpP', 'ccP', 'pPF', 'pPC',
  'pFP', 'pFF', 'pCP', 'pCC', 'fPP', 'fPF', 'fFP', 'cPP', 'cPC', 'cCP',
 ]
+
+const verificación = {
+b: [
