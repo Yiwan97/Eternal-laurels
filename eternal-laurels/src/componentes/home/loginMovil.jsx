@@ -3,6 +3,7 @@ function loginMovil() {
     <div>
       <button>Login</button>
       <dialog>
+        <Login />
       </dialog>
     </div>
   )
