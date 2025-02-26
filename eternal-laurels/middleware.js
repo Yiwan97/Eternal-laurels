@@ -1,3 +1,7 @@
+import { NextResponse } from 'next/server';
+let locales = ['en-US', 'es-ES']
+function getLocale(request){
+
 export function middleware(request) {
   const currentUser = request.cookies.get('currentUser')?.value;
 
