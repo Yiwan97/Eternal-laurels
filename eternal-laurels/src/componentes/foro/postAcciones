@@ -1,0 +1,14 @@
+import like from '../api/supabase/like.js
+
+function PostAciones(){
+  return(
+    <div>
+      <button action=''>Like</button>
+      <button>Compartir</button>
+      <button>Guardar</button>
+      <button>Reportar</button>
+    </div>
+  );
+}
+
+export default postAcciones;
