@@ -1,35 +1,48 @@
 import supabase from '../supabase';
 const idJ = caches.keys(id);
+//new user
 
 async function Recursos (idJ) {
-  const { data, error } = await supabase
+  const { error } = await supabase
     .from('recursos')
-    .select()
-    .eq('id', idJ);
+    .insert({id: idJ, food: 1500,etc})
   if(error) {
     console.log(error)
-    Recursos(idJ)
   }
-  const recursos = data;
-  return recursos;
 }
 
 async function Edificios (idJ) {
-  const { data, error } = await supabase
+  const { error } = await supabase
     .from('edificios')
-    .select()
-    .eq('id', idJ);
+    .insert({})
   if(error) {
     console.log(error)
-    Edificios(idJ)
   }
-  const edificios = data;
-  return edificios;
 }
 
 async function Ejercito (idJ) {
-  const { data,  error } = await supabase
+  const { error } = await supabase
     .from('soldados')
-    .select()
-    .eq('id', idJ);
+    .insert({})
+  if (error){
+    console.log(error)
+  }
 }
+
+export async function Investigacion (idJ) {
+  const { error } = await supabase 
+    .from('ciencia')
+    .insert({})
+  if(error){
+    console.log(error)
+  }
+}
+
+export async function Workers (idJ) {
+  const { error } = await supabase 
+    .from('trabajo')
+    .insert({})
+  if(error){
+    console.log(error)
+  }
+} 
