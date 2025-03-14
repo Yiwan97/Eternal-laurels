@@ -1,20 +1,23 @@
-//Creacion de un servidor web HTTPS
-const https = require('https');
-const fs = require('fs');
+const { createServer } = require('https');
+     const { parse } = require('url');
+     const next = require('next');
+     const fs = require('fs');
 
-//Carga del certificado SSL/TLS
-const cert = fs.readFileSync('./cert.pem');
-const key = fs.readFileSync('./key.pem');
+     const dev = process.env.NODE_ENV !== 'production';
+     const app = next({ dev });
+     const handle = app.getRequestHandler();
 
-//Creacion de un servidor HTTPS
-const server = https.createServer({
-  cert: cert,
-  key:  key,
-}, (req, res) => {
-  res.writeHead(200, {
-    'Content-Type': 'text/plain',
-  });
-  res.end('Finalizado');
-});
+     const httpsOptions = {
+       key: fs.readFileSync('./key.pem'),
+       cert: fs.readFileSync('./cert.pem'),
+     };
 
-server.listen(num);
+     app.prepare().then(() => {
+       createServer(httpsOptions, (req, res) => {
+         const parsedUrl = parse(req.url, true);
+         handle(req, res, parsedUrl);
+       }).listen(3000, (err) => {
+         if (err) throw err;
+         console.log('> Ready on https://localhost:3000');
+       });
+     });
