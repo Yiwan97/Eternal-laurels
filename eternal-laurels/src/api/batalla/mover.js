@@ -1,4 +1,6 @@
-function Mover(unidad, jugador, posicion) {
+unidad = [idU,idJ, [x,y]]
+
+function Mover(unidad, idJ, [x,y]) {
   if(unidad.jugador == jugador) {
     if(unidad.posicion == null) {
       if(posicion[1] < 2) {
